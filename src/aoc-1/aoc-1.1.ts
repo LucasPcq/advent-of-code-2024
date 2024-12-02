@@ -1,7 +1,7 @@
-import { getLists } from "../aoc-1-utils";
+import { createMatrixNumberFromFile } from "../utils";
 
 export const adventOfCodePart1 = () => {
-  const { firstList, secondList } = getLists();
+  const matrix = createMatrixNumberFromFile("/aoc-1/aoc-1-input.txt");
 
   const reorganizeList = (list: number[]): number[] => {
     return list.sort((a, b) => a - b);
@@ -23,5 +23,5 @@ export const adventOfCodePart1 = () => {
     return sum;
   };
 
-  console.log(findTotalDistanceBetweenTwoLists(firstList, secondList));
+  console.log(findTotalDistanceBetweenTwoLists(matrix[0], matrix[1]));
 };

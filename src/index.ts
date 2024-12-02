@@ -1,4 +1,3 @@
-import { adventOfCodePart1 } from "./aoc-1/part-1/aoc-1.1";
-import { adventOfCodePart2 } from "./aoc-1/part-1/aoc-1.2";
+import { AdventOfCode2Part2 } from "./aoc-2/aoc-2.2";
 
-adventOfCodePart2();
+AdventOfCode2Part2();
