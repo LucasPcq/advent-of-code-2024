@@ -14,3 +14,7 @@ export const createMatrixNumberFromFile = (
 
   return matrix;
 };
+
+export const createStringFromFile = (path: string): string => {
+  return fs.readFileSync(__dirname + path, "utf-8");
+};

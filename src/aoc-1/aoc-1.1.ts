@@ -1,7 +1,7 @@
 import { createMatrixNumberFromFile } from "../utils";
 
 export const adventOfCodePart1 = () => {
-  const matrix = createMatrixNumberFromFile("/aoc-1/aoc-1-input.txt");
+  const matrix = createMatrixNumberFromFile("/aoc-1/input.txt");
 
   const reorganizeList = (list: number[]): number[] => {
     return list.sort((a, b) => a - b);

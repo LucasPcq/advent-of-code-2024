@@ -1,7 +1,7 @@
-import { getLists } from "../aoc-1-utils";
+import { createMatrixNumberFromFile } from "../utils";
 
 export const adventOfCodePart2 = () => {
-  const { firstList, secondList } = getLists();
+  const matrix = createMatrixNumberFromFile("/aoc-1/input.txt");
 
   const findSimilarityScoreBetweenTwoLists = (
     firstList: number[],
@@ -20,5 +20,5 @@ export const adventOfCodePart2 = () => {
     return sum;
   };
 
-  console.log(findSimilarityScoreBetweenTwoLists(firstList, secondList));
+  console.log(findSimilarityScoreBetweenTwoLists(matrix[0], matrix[1]));
 };

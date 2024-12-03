@@ -1,9 +1,8 @@
 import { createMatrixNumberFromFile } from "../utils";
 
 export const AdventOfCode2Part1 = () => {
-  const matrix: Array<Array<number>> = createMatrixNumberFromFile(
-    "/aoc-2/aoc-2-input.txt"
-  );
+  const matrix: Array<Array<number>> =
+    createMatrixNumberFromFile("/aoc-2/input.txt");
 
   // const matrix: Array<Array<number>> = [
   //   [7, 6, 4, 2, 1],
